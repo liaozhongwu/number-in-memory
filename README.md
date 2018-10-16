@@ -1,0 +1,51 @@
+# Number-In-Memory
+
+show memory storage of number
+
+
+
+## Install
+
+```bash
+npm install number-in-memory
+```
+
+
+
+## Usage
+
+```js
+const { number2Memory, memory2Number } = require('number-in-memory');
+
+// all result format by string
+
+// '0011111111001001100110011001100110011001100110011001100110011010'
+number2Memory(0.1);
+
+// like toPrecision
+// '0.1000000000000000055511151231257827021181583404541015625'
+memory2Number(number2Memory(0.1));
+
+// '0011111111100011001100110011001100110011001100110011001100110011'
+number2Memory(0.3);
+
+// like toPrecision
+// '0.299999999999999988897769753748434595763683319091796875'
+memory2Number(number2Memory(0.3));
+
+// '0011111111100011001100110011001100110011001100110011001100110100'
+number2Memory(0.1 + 0.2);
+
+// like toPrecision
+// '0.3000000000000000444089209850062616169452667236328125'
+memory2Number(number2Memory(0.1 + 0.2));
+
+// '0100001101010000000000000000000000000000000000000000000000000001'
+number2Memory('9007199254740993');
+
+// like toPrecision
+// '9007199254740994'
+memory2Number(number2Memory('9007199254740993'));
+
+```
+
