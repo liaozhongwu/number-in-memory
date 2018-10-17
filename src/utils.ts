@@ -99,9 +99,9 @@ export function half(str: string): string {
 }
 
 /**
- * @desc get polish of length
+ * @desc get repeat of length
  */
-export function polish(str: string, len: number) {
+export function repeat(str: string, len: number) {
   if (len <= 0) return '';
   return new Array(len).fill(str).join('');
 }

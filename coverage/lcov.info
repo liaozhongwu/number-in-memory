@@ -183,14 +183,14 @@ FN:3,addInt
 FN:20,addFloat
 FN:36,double
 FN:60,half
-FN:87,polish
+FN:87,repeat
 FNF:5
 FNH:5
 FNDA:59,addInt
 FNDA:82,addFloat
 FNDA:560,double
 FNDA:760,half
-FNDA:27,polish
+FNDA:27,repeat
 DA:2,1
 DA:3,1
 DA:4,59
